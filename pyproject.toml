@@ -7,20 +7,26 @@ requires-python = "~=3.12"
 readme = "README.md"
 dependencies = [
     "pandas>=2.2.3,<3",
-    "pydantic>=2.10.4,<3",
-    "pyarrow>=18.1.0,<19",
+    "pydantic==2.11.0a2",
+    "pyarrow==19.0.0",
     "pyyaml==6.0.2",
     "annotated-types>=0.7.0",
-    "tomlkit>=0.13.2"
+    "tomlkit>=0.13.2",
+    "black==25.1.0",
+    "coverage==7.6.12",
+    "pbr==6.1.1",
+    "pip==25.0.1",
+    "pydantic-core==2.29.0",
+    "ruff==0.9.6",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "coverage>=7.5.2,<8",
-    "pytest>=8.2.1,<9",
-    "ruff>=0.4.5,<0.5",
-    "bandit>=1.7.8,<2",
-    "black>=24,<25",
+    "coverage>=7.5.2",
+    "pytest>=8.2.1",
+    "ruff>=0.4.5",
+    "bandit>=1.7.8",
+    "black>=24",
     "setuptools>=75.8.0",
 ]
 

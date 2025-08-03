@@ -156,7 +156,9 @@ class Component:
         Allows for a more idiomatic way to access the generatedfield.
         """
         if not hasattr(decorated_function, "component"):
-            raise ValueError(f"This only work on functions decorated with @command_component.")
+            raise ValueError(
+                f"This only work on functions decorated with @command_component."
+            )
         return decorated_function.component
 
     def __init__(
